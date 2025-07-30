@@ -94,6 +94,192 @@
     margin: 0 auto;
 }
 
+/* Personal Introduction Section */
+.myPic {
+    margin: 2rem 0 4rem 0;
+    padding: 3rem 0;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    padding: 2rem;
+}
+
+.intro-greeting {
+    font-size: 1.3rem;
+    color: #4ecdc4;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.intro-name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.faith-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+}
+
+.faith-icon {
+    font-size: 2.5rem;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% { filter: brightness(1) drop-shadow(0 0 5px rgba(255, 215, 0, 0.5)); }
+    100% { filter: brightness(1.2) drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)); }
+}
+
+.faith-text h3 {
+    color: #ffd700;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.faith-text p {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.intro-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.highlight-tag {
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), rgba(78, 205, 196, 0.2));
+    color: #4ecdc4;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.highlight-tag:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.3), rgba(78, 205, 196, 0.3));
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.2);
+}
+
+.intro-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.image-frame {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid transparent;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #ffd700);
+    padding: 4px;
+    animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.image-frame:hover .profile-image {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.image-frame:hover .image-overlay {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.blessing-text {
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.faith-quote {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 300px;
+}
+
+.faith-quote p {
+    color: #ffd700;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
+}
+
 /* Hero Section */
 .hero-section {
     text-align: center;
@@ -965,6 +1151,27 @@
         font-size: 2.5rem;
     }
     
+    .intro-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .intro-name {
+        font-size: 2.5rem;
+    }
+    
+    .faith-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .image-frame {
+        width: 280px;
+        height: 280px;
+    }
+    
     .gallery-row {
         flex-direction: column;
         align-items: center;
@@ -1027,6 +1234,33 @@
     
     .hero-subtitle {
         font-size: 1.1rem;
+    }
+    
+    .intro-name {
+        font-size: 2rem;
+    }
+    
+    .intro-text {
+        padding: 1rem;
+    }
+    
+    .image-frame {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .faith-quote {
+        max-width: 250px;
+        padding: 1rem;
+    }
+    
+    .intro-highlights {
+        justify-content: center;
+    }
+    
+    .highlight-tag {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
     }
     
     .food-card {
