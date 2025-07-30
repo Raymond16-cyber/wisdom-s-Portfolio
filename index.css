@@ -579,6 +579,372 @@
     50% { transform: scale(1.1); }
 }
 
+/* Coding Adventure Section */
+.coding-adventure {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.coding-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.coding-content p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.coding-skills {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 280px;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(69, 183, 209, 0.1), rgba(150, 206, 180, 0.1));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(69, 183, 209, 0.2);
+    background: linear-gradient(135deg, rgba(69, 183, 209, 0.2), rgba(150, 206, 180, 0.2));
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    color: #4ecdc4;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.skill-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4ecdc4, #45b7d1);
+    border-radius: 4px;
+    animation: skillLoad 2s ease-in-out;
+}
+
+@keyframes skillLoad {
+    0% { width: 0%; }
+}
+
+.projects-showcase {
+    margin-top: 3rem;
+}
+
+.projects-showcase h3 {
+    font-size: 2rem;
+    color: #4ecdc4;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.project-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 350px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 107, 107, 0.1);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-icon {
+    font-size: 2rem;
+}
+
+.project-card h4 {
+    color: #ff6b6b;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.project-card p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-stack span {
+    background: rgba(78, 205, 196, 0.2);
+    color: #4ecdc4;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Dancing Techniques Section */
+.dancing-techniques {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.dancing-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.dancing-content p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.dance-styles {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.dance-card {
+    width: 320px;
+    padding: 2rem;
+    border-radius: 25px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.salsa-card {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
+}
+
+.hiphop-card {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    box-shadow: 0 15px 35px rgba(155, 89, 182, 0.3);
+}
+
+.contemporary-card {
+    background: linear-gradient(135deg, #4ecdc4, #45b7d1);
+    box-shadow: 0 15px 35px rgba(78, 205, 196, 0.3);
+}
+
+.dance-card:hover {
+    transform: translateY(-15px) scale(1.05);
+}
+
+.dance-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.dance-emoji {
+    font-size: 4rem;
+    z-index: 2;
+    position: relative;
+    animation: dance 3s ease-in-out infinite;
+}
+
+@keyframes dance {
+    0%, 100% { transform: rotate(-5deg) scale(1); }
+    25% { transform: rotate(5deg) scale(1.1); }
+    50% { transform: rotate(-3deg) scale(1.05); }
+    75% { transform: rotate(3deg) scale(1.1); }
+}
+
+.dance-waves {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: ripple 2s ease-out infinite;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.dance-info h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.dance-description {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.dance-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dance-level span {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.rhythm-indicator {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.beat {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.beat.active {
+    background: white;
+    animation: beatPulse 1s ease-in-out infinite;
+}
+
+@keyframes beatPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Dance Philosophy */
+.dance-philosophy {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.1), rgba(155, 89, 182, 0.1));
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.philosophy-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6b6b, #9b59b6, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.philosophy-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.philosophy-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.philosophy-item h4 {
+    color: #4ecdc4;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.philosophy-item p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .Header {
@@ -633,6 +999,25 @@
     .section-title {
         font-size: 2rem;
     }
+    
+    .coding-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dance-styles {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -674,6 +1059,29 @@
     
     .section-title {
         font-size: 1.8rem;
+    }
+    
+    .skill-card {
+        width: 280px;
+        padding: 1.5rem;
+    }
+    
+    .project-card {
+        width: 280px;
+        padding: 1.5rem;
+    }
+    
+    .dance-card {
+        width: 280px;
+        padding: 1.5rem;
+    }
+    
+    .dance-philosophy {
+        padding: 2rem;
+    }
+    
+    .philosophy-grid {
+        gap: 1rem;
     }
 }
 /* footer courtesy */
